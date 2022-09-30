@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Dino from './Dino';
+
+const dino = {
+  title: 'Dinosaurs are Super Duper Awesome',
+  author: 'Stealthy Stegosaurus',
+  body: 'Check out this body property!',
+  comments: ["First!", "Great post", "Hire this author now!"]
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Dino creature={dino}/>
     </div>
   );
 }
